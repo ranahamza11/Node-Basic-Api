@@ -73,7 +73,7 @@ app.post('/products', async (req, res) => {
 })
 
 
-mongoose.connect("mongodb+srv://drovisfrovis:donno123@cluster0.39jyplo.mongodb.net/Node-API?retryWrites=true&w=majority")
+mongoose.connect("Your mongo url")
 .then(() => {
         console.log("connected to database");
         app.listen(3000, () => console.log('listen to the 3000'));
